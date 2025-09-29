@@ -9,7 +9,7 @@ def count_character(string, character):
     return count
 
 
-input_string = input("Enter a string: ")
+input_string = input("Please enter a string: ")
 
 input_character = input("Enter a character to count: ")
 result = count_character(input_string, input_character)
