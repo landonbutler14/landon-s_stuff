@@ -18,15 +18,23 @@ if shape == "circle":
     except ValueError:
         print("Invalid input, please enter a numeric value for radius.")
 elif shape == "rectangle":
-    length = float(input("Enter the length of the rectangle: "))
-    width = float(input("Enter the width of the rectangle: "))
-    area = compute_area_rectangle(length, width)
-    print(f"The area of the rectangle is: {area:.2f}")
+    try:
+        length = float(input("Enter the length of the rectangle: "))
+        width = float(input("Enter the width of the rectangle: "))
+        area = compute_area_rectangle(length, width)
+        print(f"The area of the rectangle is: {area:.2f}")
+    except ValueError:
+        print("Invalid input, please enter numeric values for length and width.")
+
 elif shape == "triangle":
-    base = float(input("Enter the base of the triangle: "))
-    height = float(input("Enter the height of the triangle: "))
-    area = compute_area_triangle(base, height)
-    print(f"The area of the triangle is: {area:.2f}")
+    try:
+        base = float(input("Enter the base of the triangle: "))
+        height = float(input("Enter the height of the triangle: "))
+        area = compute_area_triangle(base, height)
+        print(f"The area of the triangle is: {area:.2f}")
+    except ValueError:
+        print("Invalid input, please enter numeric values for base and height.")
+
 else:
     print("Invalid shape entered. Please choose circle, rectangle, or triangle.")
     restart = (input("Restart?")).lower()
