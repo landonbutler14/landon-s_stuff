@@ -1,4 +1,4 @@
-#This will be a cookie clicker style game where the user can accumulate points by clicking a button.
+#This will be a cookie clicker style game where the user can accumulate points by clicking a button. (AI Wrote this one lol)
 import time
 import random
 import sys
@@ -109,5 +109,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     game = JabbaTheHuttGame(root)
     root.mainloop()
+
 
     
